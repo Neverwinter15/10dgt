@@ -1,0 +1,35 @@
+# how to use while loops and if statments
+# keanu kesha
+# 9 may 2025
+# version 1.0
+
+# while loops
+'''keep_going = "" # The variable contains an empty string
+while keep_going == "":
+
+    Like_milk = input("Do you like chocolate milk?")
+
+    if Like_milk == "yes":
+        print("That is great. I like milk too!") 
+        keep_going = "finshed"
+    if Like_milk == "no":
+        print("you are missing out")'''
+
+
+# version 2.0 making code pythonic
+Keep_going = ""
+while Keep_going ==  "":
+     # .lower() converts answer to lower case
+     like_coffee = input("Do you like coffee?").lower()  
+     if like_coffee == "yes" or like_coffee == 'y':
+          print("that is great . i like coffee too")
+     elif like_coffee == "no" or like_coffee == "n":
+        print("you are missing out")
+           
+        like_tea = input("do you like tea instead?").upper()
+ 
+        if like_tea == "yes" or like_tea == "Y":
+            print("good for you. give coffee another time")
+        elif like_tea ==  "no" or like_tea == "N":
+            print("I am sorry. that is all i have")
+            Keep_going = input("press <enter> to finish")
