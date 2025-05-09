@@ -1,0 +1,10 @@
+# how to use while loops and if statments
+# keanu kesha
+# 9 may 2025
+# version 1.0
+
+# while loops
+keep_going = "" # The variable contains an empty string
+while keep_going == "":
+
+Like_coffee = input("Do you like chocolate milk?")
