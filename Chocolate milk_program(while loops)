@@ -1,6 +1,6 @@
-# how to use while loops and if statments
+# how to create function, thus making my recyclable
 # keanu kesha
-# 9 may 2025
+# 14 may 2025
 # version 1.0
 
 # while loops
@@ -17,7 +17,7 @@ while keep_going == "":
 
 
 # version 2.0 making code pythonic
-Keep_going = ""
+'''Keep_going = ""
 while Keep_going ==  "":
      # .lower() converts answer to lower case
      like_coffee = input("Do you like coffee?").lower()  
@@ -32,4 +32,82 @@ while Keep_going ==  "":
             print("good for you. give coffee another time")
         elif like_tea ==  "no" or like_tea == "N":
             print("I am sorry. that is all i have")
-            Keep_going = input("press <enter> to finish")
+            Keep_going = input("press <enter> to finish")'''
+
+
+
+# version 3.0
+# create function that is recylable
+# makes my code recyclable
+# the program will ask person for a number and do somthing with it.
+# loop program intil a valid number gets entered.
+
+'''def intcheck():
+    valid = False 
+    while not valid: 
+        error = "whoops, you have entered the wrong number. Please enetr a valid integer between 1 and 10" 
+         
+        try:
+            response = int(input("Enter an integer between 1 and 10 "))
+            print(response)
+
+            if response >= 1 and response <= 10:
+                 print(response)
+                 valid = True
+
+            else: 
+                print(error)
+
+
+        except ValueError:   
+            print(error)
+
+
+intcheck() # to call(use a function write it's name)'''
+
+
+# vesion 3.1 
+# has been copied from original code
+
+
+def intcheck(question, low, high):
+    valid = False 
+    while not valid: 
+        error = f"whoops, you have entered the wrong number. Please enter a valid integer between {low} and {high}." 
+         
+        try:
+            response = int(input(f"Enter an integer between {low} and {high} "))
+            print(response)
+
+            if low >= 1 and response <= high:
+                 print(f" you have entered {response}.")
+                 valid = True
+
+            else: 
+                print(error)
+
+
+        except ValueError:   
+            print(error)
+
+    return response 
+
+# Questions to ask user
+num1 = intcheck("Enter a number between 1 and 10", 1, 10) # to call(use a function write it's name)
+num2 = intcheck("enter a number between 15 and 20", 15, 20)
+
+# adding responses together
+sum_num =  num1 + num2 
+
+# multiply the responses
+multiply = num1 * num2 
+
+print(f"your to numbers added together are {sum_num}.\n")
+print(f"your to numbers multiplied resulted in {multiply}.")
+
+
+         
+
+
+
+
