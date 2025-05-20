@@ -1,0 +1,46 @@
+# video 2 and 3
+
+"""Greeting = "hello world"
+
+
+fav_num = 4
+
+love_programing = False
+
+print(Greeting)
+print(fav_num)
+print(love_programing)
+
+my_name = "mr k
+
+
+fav_num = 7 
+num_string = "5" # this code dosent work because it treats the number as speech
+
+print(fav_num*2)
+print(num_string*5)
+
+
+
+# ask user for name
+username = input("what is your name? ")
+
+# ask user for number (integer)
+fav_num = int(input("what is your favourite number"))
+
+# double, halve and square using number
+double = fav_num * 2
+halve = fav_num / 2
+square = fav_num * fav_num
+# greet the user
+print()
+print(f"Hi {username}, your favourite number is {fav_num}")
+
+# output the results of doubling,halving and squaring 
+# using number 
+print(f"Your number doubled is {double}")
+print(f"your number halved is {halve}")
+print(f"you number squared is {square}")"""
+
+
+
