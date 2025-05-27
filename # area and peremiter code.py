@@ -1,38 +1,51 @@
 # area and peremiter code
-
+# ask user for width and loop
 def num_check(question):
-      while True:  
+    error = "please enter a number more then zero\n"
+    while True:
 
-            try:
-                # ask user for number
-                response = float(input(question))
-                # check number is more then zero
-                if response > 0:
-                        return response
-                else:
-                    print("please enter a number that is more then zero\n")
+        try:
+            #ask user for number
+            response = float(input(question))
+    # check number is more then zero
+            if response > 0: 
+                return response
+            else:
+                print("enter number more then zero")
 
-            except ValueError:
-                print("Error")
-
+        except ValueError:
+            print(error)
             # video 5
 
 
 
 # main routine
-for item in range(0, 2):
+
+keep_going = ""
+while keep_going == "":
+
+
+# get width and height
     width = num_check("width: ")
-    print(width)
+    print (width)
+    height = num_check("height: ")
+    print(height)
+    #  calculate area and perimeter
 
-print()
- 
-for item in range(0, 2):
-     height = num_check("height: ")
-     print (height)
+    area = width * height
+    perimeter = 2 * (width+ height)
 
-# calculate the area/ perimeter
-area = (width * height)
-perimeter = (width + width) + (height + height)
-# output the area and perimeter and area
-print(f" The area is {area}")
-print(f"The perimeter is {perimeter}")
+#output area and perimeter
+    print()
+    print(f"Perimeter: {perimeter} units")
+    print(f"Area: {area} square units")
+
+#ask user if they want to keep going
+
+    keep_going = input("press enter to keep going or any key to quit. ")
+    print("thank you for using our calculator")
+
+
+
+
+
