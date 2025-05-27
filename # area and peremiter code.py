@@ -43,7 +43,7 @@ while keep_going == "":
 #ask user if they want to keep going
 
     keep_going = input("press enter to keep going or any key to quit. ")
-    print("thank you for using our calculator")
+print("thank you for using our calculator")
 
 
 
