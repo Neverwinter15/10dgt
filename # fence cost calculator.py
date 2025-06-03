@@ -23,7 +23,6 @@ while keep_going == "":
     width =  num_check("Give me the width of the object in metres ")
      # to call(use a function write it's name)
     length = num_check("Give me the length of the object in metres ")
-    print()
     cost = num_check("Give me the cost per metre $")
     print()
     # adding responses together
@@ -33,8 +32,9 @@ while keep_going == "":
     print()
     perimeter_cost = 2 * (perimeter + cost)
     
-# print responses
+# ask user if they want to continue
     print(f"The cost to build your fence is ${perimeter_cost}.")
-    keep_going = input("would you like to continue? press enter to do this again or any key to quit ") 
+    keep_going = input("Would you like to continue? press enter to do this again or any key to quit ") 
     print()
-print("thank you for using this calculator")
+# say thank you for useing code
+print("Thank you for using this calculator.")
